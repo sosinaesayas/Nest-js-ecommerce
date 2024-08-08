@@ -11,9 +11,9 @@ import {
   UseGuards,
   UseInterceptors,
 } from '@nestjs/common';
-import { UpdateUserDTO } from './dto/register-user.dto';
+import { UpdateUserDTO } from '../shared/dto/user/register-user.dto';
 import { UserService } from './user.service';
-import { User } from './interfaces/user.interface';
+import { User } from '../shared/interfaces/user/user.interface';
 import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 import { FileInterceptor } from '@nestjs/platform-express';
 

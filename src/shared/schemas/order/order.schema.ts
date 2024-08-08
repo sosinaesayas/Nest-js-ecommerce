@@ -1,7 +1,7 @@
 import * as mongoose from 'mongoose';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
-import { Product } from 'src/product/interfaces/product.interface';
+import { Product } from 'src/shared/interfaces/product/product.interface';
 
 export type OrderSchema = Order & Document;
 

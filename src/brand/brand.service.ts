@@ -1,8 +1,8 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { CreateBrandDTO, UpdateBrandDTO } from './dto/create-brand.dto';
-import { Brand } from './interfaces/brand.interface';
+import { CreateBrandDTO, UpdateBrandDTO } from '../shared/dto/brand/create-brand.dto';
+import { Brand } from '../shared/interfaces/brand/brand.interface';
 
 @Injectable()
 export class BrandService {

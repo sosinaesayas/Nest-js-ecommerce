@@ -1,8 +1,8 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { CreateCommentDTO, UpdateCommentDTO } from './dto/create-comment-dto';
-import { Comment } from './interfaces/comment.interface';
+import { CreateCommentDTO, UpdateCommentDTO } from '../shared/dto/comment/create-comment-dto';
+import { Comment } from '../shared/interfaces/comment/comment.interface';
 
 @Injectable()
 export class CommentService {

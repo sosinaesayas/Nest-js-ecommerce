@@ -4,8 +4,8 @@ import { Model } from 'mongoose';
 import {
   CreateCategoryDTO,
   UpdateCategoryDTO,
-} from './dto/create-category.dto';
-import { Category } from './interfaces/category.interface';
+} from '../shared/dto/catagory/create-category.dto';
+import { Category } from '../shared/interfaces/catagory/category.interface';
 
 @Injectable()
 export class CategoryService {

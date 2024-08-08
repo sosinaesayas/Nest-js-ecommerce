@@ -3,7 +3,7 @@ import { JwtModule } from '@nestjs/jwt';
 import { MongooseModule } from '@nestjs/mongoose';
 import { PassportModule } from '@nestjs/passport';
 import { MailModule } from 'src/mail/mail.module';
-import { UserSchema } from 'src/user/schemas/user.schema';
+import { UserSchema } from 'src/shared/schemas/user/user.schema';
 
 import { SharedModule } from '../shared/shared.module';
 import { AuthController } from './auth.controller';

@@ -1,4 +1,4 @@
-import { User } from 'src/user/interfaces/user.interface';
+import { User } from 'src/shared/interfaces/user/user.interface';
 
 export interface ProductOrder<ProductType = string> {
   product: ProductType;

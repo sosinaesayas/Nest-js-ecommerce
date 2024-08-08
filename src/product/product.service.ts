@@ -2,8 +2,8 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 
-import { Product } from './interfaces/product.interface';
-import { CreateProductDTO, UpdateProductDTO } from './dto/create-product.dto';
+import { Product } from '../shared/interfaces/product/product.interface';
+import { CreateProductDTO, UpdateProductDTO } from '../shared/dto/product/create-product.dto';
 
 @Injectable()
 export class ProductService {

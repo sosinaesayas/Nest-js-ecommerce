@@ -13,8 +13,8 @@ import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 import {
   CreateSubCategoryDTO,
   UpdateSubCategoryDTO,
-} from './dto/create-subcategory.dto';
-import { SubCategory } from './interfaces/subcategory.interface';
+} from '../shared/dto/subcatagory/create-subcategory.dto';
+import { SubCategory } from '../shared/interfaces/subcatagory/subcategory.interface';
 import { SubcategoryService } from './subcategory.service';
 
 @Controller('subcategory')

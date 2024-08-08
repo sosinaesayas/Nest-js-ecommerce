@@ -6,8 +6,8 @@ import {
   Res,
   UseGuards,
 } from '@nestjs/common';
-import { RegisterUserDTO } from 'src/user/dto/register-user.dto';
-import { User } from 'src/user/schemas/user.schema';
+import { RegisterUserDTO } from 'src/shared/dto/user/register-user.dto';
+import { User } from 'src/shared/schemas/user/user.schema';
 import { AuthService } from './auth.service';
 import { LocalAuthGuard } from './local-auth.guard';
 

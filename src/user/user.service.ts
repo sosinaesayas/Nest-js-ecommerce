@@ -1,8 +1,8 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { UpdateUserDTO } from './dto/register-user.dto';
-import { User } from './interfaces/user.interface';
+import { UpdateUserDTO } from '../shared/dto/user/register-user.dto';
+import { User } from '../shared/interfaces/user/user.interface';
 import * as bcrypt from 'bcrypt';
 import { CloudinaryService } from 'src/cloudinary/cloudinary.service';
 

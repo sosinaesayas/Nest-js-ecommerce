@@ -7,8 +7,6 @@ export class CreateCommentDTO {
   @MinLength(12, { message: 'The min length of comment is 12 characters' })
   @MaxLength(180, { message: 'The max length of comment is 180 characters' })
   comment: string;
-
-  @IsNotEmpty()
   userID: string;
 }
 

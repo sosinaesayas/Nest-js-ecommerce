@@ -11,8 +11,8 @@ import {
 } from '@nestjs/common';
 import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 import { BrandService } from './brand.service';
-import { CreateBrandDTO, UpdateBrandDTO } from './dto/create-brand.dto';
-import { Brand } from './interfaces/brand.interface';
+import { CreateBrandDTO, UpdateBrandDTO } from '../shared/dto/brand/create-brand.dto';
+import { Brand } from '../shared/interfaces/brand/brand.interface';
 
 @UseGuards(JwtAuthGuard)
 @Controller('brand')
